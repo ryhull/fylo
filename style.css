@@ -71,11 +71,16 @@ header img, header h1, header p {
 }
 
 header img {
-    height:60%;
+    width: 50%;
+    height: auto;
 }
 
 header h1, header p {
     width:50%;
+}
+
+header p {
+    font-size:0.8em;
 }
 
 button {
@@ -112,6 +117,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    margin-top:2em
 }
 
 .aboutSection {
@@ -126,16 +132,108 @@ main {
 .aboutItem {
     text-align: center;
     width:70%;
+    transition:transform 0.5s;
+}
+
+.aboutItem:hover {
+    transform: scale(1.05);
 }
 
 .aboutItem img {
     height:75px;
-
 }
 
 .aboutItem img, .aboutItem h3, .aboutItem p {
     margin-bottom:15px;
+    backface-visibility: hidden;
 }
+
+.aboutItem h3 {
+    font-size:1.3em;
+}
+
+.productiveSection {
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.productiveContainer {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5%;
+    margin:7rem 0;
+}
+
+.productiveContainer a {
+    color: #65e2d9;
+    text-decoration: none;
+    border-bottom:1px solid;
+    padding-bottom: 2px;
+}
+
+.productiveContainer a:hover {
+    filter:brightness(130%);
+}
+
+.productiveContainer a>img {
+    transform:translateY(3px)
+}
+
+.productiveContainer>img {
+    min-width:50%;
+    height:auto;
+}
+
+.productiveContainer h1, .productiveContainer p {
+    margin-bottom: 25px;
+    line-height:1.5;
+ 
+}
+
+
+.commentSection {
+    display:flex;
+    justify-content: space-evenly;
+    margin-bottom:7rem;
+    gap:5%;
+}
+
+.commentBox {
+    background-color:#202a3c;
+    display:grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows:auto 1fr;
+    border-radius:5px;
+    padding:30px;
+    box-shadow: 2px 2px 20px 2px #0b1523;
+    transition: transform 0.3s;
+}
+
+.commentBox:hover {
+    transform:translateY(-5px)
+}
+
+.commentBox .comment {
+    grid-column:1/span2;
+    margin-bottom:25px;
+}
+
+
+.commentBox img {
+    border-radius:50%;
+    width:50px;
+    margin-right:15px;
+}
+
+.commentBox div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 
 .emailSection {
     width:100%;
@@ -154,8 +252,10 @@ main {
     justify-content: center;
     align-items: center;
     text-align:center;
-    width:90%;
+    width:50%;
+    box-shadow: 2px 2px 20px 2px #0b1523;
 }
+
 
 .emailContainer h1, .emailContainer p {
     margin-bottom:25px;
@@ -165,6 +265,7 @@ main {
     padding:1em;
     border-radius:25px;
     border:none;
+    margin-bottom:25px;
 }
 
 .emailContainer input:focus {
@@ -213,7 +314,7 @@ footer img {
     margin-right:10px;
 }
 
-.navContainer, .headerContainer, .mainContainer, .footerContainer, .emailContainer {
+.navContainer, .headerContainer, .mainContainer, .productiveContainer, .commentSection, .footerContainer {
     max-width:1440px;
     width:90%;
 }
