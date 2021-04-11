@@ -50,6 +50,10 @@ nav a {
     text-decoration:none;
 }
 
+nav a:hover {
+    color:#65e2d9;
+}
+
 header {
     background-color:#1c2431;
     background-image:url(images/bg-curvy-desktop.svg);
@@ -74,7 +78,7 @@ header h1, header p {
     width:50%;
 }
 
-header button {
+button {
     background:linear-gradient(#65e2d9,#339ecc);
     border:none;
     padding:1em 3em;
@@ -84,11 +88,11 @@ header button {
     font-weight:700;
 }
 
-header button:hover {
+button:hover {
     background:#65e2d9;
 }
 
-header button:active {
+button:active {
     background:#339ecc;
 }
 
@@ -105,6 +109,7 @@ nav, header, main, footer {
 
 main {
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
 }
@@ -132,11 +137,40 @@ main {
     margin-bottom:15px;
 }
 
+.emailSection {
+    width:100%;
+    background:linear-gradient(to bottom, #181f2a 50%, #0b1523 50%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
+.emailContainer {
+    background-color:#1c2431;
+    padding:3%;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    width:90%;
+}
 
+.emailContainer h1, .emailContainer p {
+    margin-bottom:25px;
+}
 
+.emailContainer input {
+    padding:1em;
+    border-radius:25px;
+    border:none;
+}
 
-
+.emailContainer input:focus {
+    box-shadow: 0px 0px 0px 2px #65e2d9;
+    outline:none;
+}
 
 
 footer {
@@ -149,7 +183,7 @@ footer {
 
 .footerContainer {
     display:grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
     grid-template-rows: auto 1fr;
     grid-gap:5%;
 }
@@ -165,17 +199,21 @@ footer a {
     color:white;
 }
 
+footer a:hover {
+    color:#65e2d9;
+}
+
 footer li, footer a {
     list-style:none;
     margin-bottom:15px;
 }
 
-footer li img {
+footer img {
     vertical-align:middle;
     margin-right:10px;
 }
 
-.navContainer, .headerContainer, .mainContainer, .footerContainer {
+.navContainer, .headerContainer, .mainContainer, .footerContainer, .emailContainer {
     max-width:1440px;
     width:90%;
 }
