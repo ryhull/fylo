@@ -19,7 +19,8 @@
     .commentSection {
         flex-direction: column;
         gap:25px;
-        width:75%
+        width:75%;
+        margin:7.5% 0;
     }
 
     .productiveContainer {
@@ -28,6 +29,7 @@
 
     .emailContainer {
         width:75%;
+        margin-top:5%;
     }
 
     .emailContainer input {
@@ -77,18 +79,26 @@
     }
 
     .productiveContainer h1 {
-        font-size:1.8em;
+        font-size:2.4em;
     }
 
     .productiveContainer p {
         padding:0;
+        line-height:1.6;
     }
 
-    .commentSection {
-        margin-bottom:25px;
+    .productiveContainer h1, .productiveContainer p {
+        margin-bottom:15px;
+    }
+
+     body .commentSection {
+        margin:5% 0;
+        width:80%;
     }
     .emailContainer {
         width:93%;
+        padding:25px;
+        margin-top:10%;
     }
     .emailContainer h1 {
         font-size:1.8em;
@@ -97,6 +107,9 @@
         max-width:1440px;
         width:93%;
     }
+
+    .footerContainer>img {
+        width:40%;
 
     nav img {
         width:30%;
