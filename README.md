@@ -23,6 +23,8 @@ Users should be able to:
 
 ![Screenshot](https://i.imgur.com/93uWw64.png)
 
+![Screenshot](https://i.imgur.com/yWf28nW.png)
+
 ### Links
 
 https://slashry.github.io/fylo/
