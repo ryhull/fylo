@@ -64,6 +64,15 @@
 }
 
 @media only screen and (max-width: 500px) {
+
+    .navContainer ul {
+        display:none;
+    }
+
+    #openBtn {
+        display:initial;
+    }
+
     header img {
         width:80%;
     }
@@ -95,6 +104,7 @@
         margin:5% 0;
         width:80%;
     }
+
     .emailContainer {
         width:93%;
         padding:25px;
@@ -103,6 +113,7 @@
     .emailContainer h1 {
         font-size:1.8em;
     }
+
     .navContainer, .headerContainer, .mainContainer, .productiveContainer, .commentSection, .footerContainer {
         max-width:1440px;
         width:93%;
@@ -110,8 +121,9 @@
 
     .footerContainer>img {
         width:40%;
+    }
 
     nav img {
-        width:30%;
+        width:35%;
     }
 }

@@ -6,7 +6,6 @@
     padding:0;
 }
 
-
 h1, h3 {
     font-family:Raleway, sans-serif;
 }
@@ -45,12 +44,12 @@ nav li {
     display:inline-block;
 }
 
-nav a {
+nav a, .mobileNavContainer a {
     color:white;
     text-decoration:none;
 }
 
-nav a:hover {
+nav a:hover, .mobileNavContainer a:hover, #openBtn:hover {
     color:#65e2d9;
 }
 
@@ -101,9 +100,55 @@ button:active {
     background:#339ecc;
 }
 
+.mobileNavContainer {
+    position:fixed;
+    width:100%;
+    height:0%;
+    background-color:rgb(32, 42, 60, 0.98);
+    z-index:100;
+    overflow:hidden;
+    transition: 0.5s;
+}
+
+#openBtn {
+    display:none;
+    position:absolute;
+    top:50px;
+    right:20px;
+    color:white;
+    text-decoration:none;
+    font-size:2.5em;
+}
+
+.mobileNav {
+    margin-top:150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobileNav li, .mobileNav a {
+    display: block;
+    margin-bottom:35px;
+}
+
+.mobileNav a {
+    font-size: 2em;
+    font-family:Raleway, sans-serif;
+}
+
+#closeBtn {
+    position:absolute;
+    top:50px;
+    right:20px;
+    font-size:2.75em
+}
+
 nav, header, main, footer {
     width:100%;
 }
+
 .headerContainer {
     display:flex;
     flex-direction: column;
@@ -207,7 +252,7 @@ main {
     grid-template-rows:auto 1fr;
     border-radius:10px;
     padding:30px;
-    box-shadow: 2px 2px 20px 2px #0b1523;
+    box-shadow: 2px 2px 20px 2px #141e2b;
     transition: transform 0.3s;
 }
 
@@ -232,6 +277,10 @@ main {
     flex-direction: column;
     justify-content: center;
 
+}
+
+.commentBox div>p:nth-of-type(2) {
+    color:#abb6ca;;
 }
 
 
@@ -266,13 +315,17 @@ main {
     border-radius:25px;
     border:none;
     margin-bottom:25px;
+    outline:none;
 }
 
-.emailContainer input:focus {
+.emailContainer input:focus:valid {
     box-shadow: 0px 0px 0px 2px #65e2d9;
     outline:none;
 }
 
+.emailContainer input:invalid {
+    box-shadow: 0px 0px 0px 2px #e26565;
+}
 
 footer {
     background-color:#0b1523;
