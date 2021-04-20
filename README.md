@@ -19,9 +19,9 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-### Screenshot of my solution (so far)
+### Screenshot of my solution
 
-![Screenshot](https://i.imgur.com/KLADhY6.png)
+![Screenshot](https://i.imgur.com/93uWw64.png)
 
 ### Links
 
