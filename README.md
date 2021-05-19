@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-https://slashry.github.io/fylo/
+https://ryhull.github.io/fylo/
 
 ## My process
 
